@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F260CD2B-1778-49EE-9BD1-3F7C866D767A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ChamSocVaGuiXe</RootNamespace>
+    <AssemblyName>ChamSocVaGuiXe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Car\Car.cs" />
+    <Compile Include="ChamSocVaGuiXeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamSocVaGuiXeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChamSocVaGuiXeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamSocVaGuiXeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChamSocVaGuiXeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamSocVaGuiXeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bike\fAddBike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bike\fAddBike.Designer.cs">
+      <DependentUpon>fAddBike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bike\fCostFineBike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bike\fCostFineBike.Designer.cs">
+      <DependentUpon>fCostFineBike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bike\fListBike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bike\fListBike.Designer.cs">
+      <DependentUpon>fListBike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChamSocVaGuiXe_ListCar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamSocVaGuiXe_ListCar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChamSocVaGuiXe_ListMoto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamSocVaGuiXe_ListMoto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChamSocVaGuiXe_ManageCar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamSocVaGuiXe_ManageCar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChamSocVaGuiXe_ManageMoto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChamSocVaGuiXe_ManageMoto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Car\fAddCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\fAddCar.Designer.cs">
+      <DependentUpon>fAddCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\fCostFineCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\fCostFineCar.Designer.cs">
+      <DependentUpon>fCostFineCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\fListCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\fListCar.Designer.cs">
+      <DependentUpon>fListCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\fManageCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\fManageCar.Designer.cs">
+      <DependentUpon>fManageCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Car\fUpdateDeleteCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car\fUpdateDeleteCar.Designer.cs">
+      <DependentUpon>fUpdateDeleteCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRavenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRavenue.Designer.cs">
+      <DependentUpon>fRavenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motobike\fCostFineMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motobike\fCostFineMoto.Designer.cs">
+      <DependentUpon>fCostFineMoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motobike\fManageMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motobike\fManageMoto.Designer.cs">
+      <DependentUpon>fManageMoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motobike\fUpdateDeleteMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motobike\fUpdateDeleteMoto.Designer.cs">
+      <DependentUpon>fUpdateDeleteMoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motobike\fAddMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motobike\fAddMoto.Designer.cs">
+      <DependentUpon>fAddMoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motobike\fListMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motobike\fListMoto.Designer.cs">
+      <DependentUpon>fListMoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bike\fManageBike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bike\fManageBike.Designer.cs">
+      <DependentUpon>fManageBike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSlotOfPark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSlotOfPark.Designer.cs">
+      <DependentUpon>fSlotOfPark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bike\fUpdateDeleteBike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bike\fUpdateDeleteBike.Designer.cs">
+      <DependentUpon>fUpdateDeleteBike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motobike\Moto.cs" />
+    <Compile Include="My_DB.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Bike\Bike.cs" />
+    <EmbeddedResource Include="Bike\fAddBike.resx">
+      <DependentUpon>fAddBike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bike\fCostFineBike.resx">
+      <DependentUpon>fCostFineBike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bike\fListBike.resx">
+      <DependentUpon>fListBike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\fAddCar.resx">
+      <DependentUpon>fAddCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\fCostFineCar.resx">
+      <DependentUpon>fCostFineCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\fListCar.resx">
+      <DependentUpon>fListCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\fManageCar.resx">
+      <DependentUpon>fManageCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car\fUpdateDeleteCar.resx">
+      <DependentUpon>fUpdateDeleteCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRavenue.resx">
+      <DependentUpon>fRavenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motobike\fCostFineMoto.resx">
+      <DependentUpon>fCostFineMoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motobike\fManageMoto.resx">
+      <DependentUpon>fManageMoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motobike\fUpdateDeleteMoto.resx">
+      <DependentUpon>fUpdateDeleteMoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motobike\fAddMoto.resx">
+      <DependentUpon>fAddMoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motobike\fListMoto.resx">
+      <DependentUpon>fListMoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bike\fManageBike.resx">
+      <DependentUpon>fManageBike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSlotOfPark.resx">
+      <DependentUpon>fSlotOfPark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bike\fUpdateDeleteBike.resx">
+      <DependentUpon>fUpdateDeleteBike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ChamSocVaGuiXeDataSet.xsc">
+      <DependentUpon>ChamSocVaGuiXeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamSocVaGuiXeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChamSocVaGuiXeDataSet.xss">
+      <DependentUpon>ChamSocVaGuiXeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXeDataSet1.xsc">
+      <DependentUpon>ChamSocVaGuiXeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamSocVaGuiXeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChamSocVaGuiXeDataSet1.xss">
+      <DependentUpon>ChamSocVaGuiXeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXeDataSet2.xsc">
+      <DependentUpon>ChamSocVaGuiXeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamSocVaGuiXeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChamSocVaGuiXeDataSet2.xss">
+      <DependentUpon>ChamSocVaGuiXeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXe_ListCar.xsc">
+      <DependentUpon>ChamSocVaGuiXe_ListCar.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXe_ListCar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamSocVaGuiXe_ListCar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChamSocVaGuiXe_ListCar.xss">
+      <DependentUpon>ChamSocVaGuiXe_ListCar.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXe_ListMoto.xsc">
+      <DependentUpon>ChamSocVaGuiXe_ListMoto.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXe_ListMoto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamSocVaGuiXe_ListMoto.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChamSocVaGuiXe_ListMoto.xss">
+      <DependentUpon>ChamSocVaGuiXe_ListMoto.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXe_ManageCar.xsc">
+      <DependentUpon>ChamSocVaGuiXe_ManageCar.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXe_ManageCar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamSocVaGuiXe_ManageCar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChamSocVaGuiXe_ManageCar.xss">
+      <DependentUpon>ChamSocVaGuiXe_ManageCar.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXe_ManageMoto.xsc">
+      <DependentUpon>ChamSocVaGuiXe_ManageMoto.xsd</DependentUpon>
+    </None>
+    <None Include="ChamSocVaGuiXe_ManageMoto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChamSocVaGuiXe_ManageMoto.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChamSocVaGuiXe_ManageMoto.xss">
+      <DependentUpon>ChamSocVaGuiXe_ManageMoto.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_Login_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
