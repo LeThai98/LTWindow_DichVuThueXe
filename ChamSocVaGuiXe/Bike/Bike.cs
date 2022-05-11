@@ -15,6 +15,7 @@ namespace ChamSocVaGuiXe
 
 
         //  function to insert a new student
+        // nhap 1
         public bool InsertBike(int Id, MemoryStream pictureBike, MemoryStream pictureOwner, string name, string address,string phone,int timeRent,DateTime dateRent, string type)
         {
             SqlCommand command = new SqlCommand("INSERT INTO dbo.Bike (Id,ImageBike,ImageOwner,Name,Address, Phone,TimeRent,DateRent,Type)" +
